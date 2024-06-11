@@ -113,9 +113,20 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Dashboard'),
-          centerTitle: true,
-        ),
+            title: const Text(
+              'Dashboard',
+              style: TextStyle(color: Colors.white),
+            ),
+            centerTitle: true,
+            elevation: 2,
+            backgroundColor: Colors.indigo,
+            leading: IconButton(
+              icon: const Icon(
+                Icons.menu,
+                color: Colors.white,
+              ),
+              onPressed: () {},
+            )),
         body: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
